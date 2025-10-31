@@ -26,15 +26,15 @@ class EmotionCNN(nn.Module):
         x = self.fc2(x)
         return x
 
-# 2. Load Model and Set Up
+
 device = torch.device('cpu')
 model = EmotionCNN()
-# Use the relative path to your model file
+
 model.load_state_dict(torch.load("emotion_cnn_model.pth", map_location=device))
 model.to(device)
-model.eval() # Set the model to evaluation mode
+model.eval() 
 
-# Define transformations for the input image
+
 transform = transforms.Compose([
     transforms.Resize((48, 48)),
     transforms.Grayscale(num_output_channels=1),

@@ -1,7 +1,9 @@
 torch
 torchvision
-opencv-python-headless
-mediapipe
 numpy
-pillow
+matplotlib
+seaborn
+scikit-learn
+opencv-python
+Pillow
 dlib

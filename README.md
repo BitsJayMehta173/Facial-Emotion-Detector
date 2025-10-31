@@ -18,6 +18,32 @@ This model was chosen for its balance between complexity and efficiency, achievi
 - **OpenCV**
 - **FER-2013 Dataset**
 
+## Dependencies
+- **torch**
+- **torchvision**
+- **opencv-python-headless**
+- **mediapipe**
+- **numpy**
+- **pillow**
+- **dlib**
+- **numpy**
+- **cv2**
+- **dlib**
+
+## File Descriptions
+
+* **`cust_model_training.ipynb`**: A Jupyter Notebook that handles:
+    * Loading and transforming the training and testing image datasets.
+    * Defining the `EmotionCNN` model architecture.
+    * Running the training loop to train the model.
+    * Evaluating the model's performance and plotting results.
+* **`emotion_detection_app.py`**: A Python script that:
+    * Loads the pre-trained `emotion_cnn_model.pth`.
+    * Uses `dlib` for face detection from a live webcam feed.
+    * Preprocesses the detected face and feeds it to the model for emotion prediction.
+    * Displays the webcam feed with bounding boxes around faces and the predicted emotion.
+
+
 ## Installation
 ```bash
 pip install -r requirements.txt
@@ -31,16 +57,11 @@ The machine must be installed with Python and Jupyter extensions to run all the 
 Install if not installed
 Then Wait for all the cells to Complete Running
 
-## Running the Facial Emotion Detection App
+## Inference of the Facial Emotion Detection App
 To launch application:
 ```bash
 python emotion_detection_app.py
 ```
-
-## Future Improvements
-- Experiment with different CNN architectures.
-- Fine-tune hyperparameters for better accuracy.
-- Integrate more datasets for improved generalization.
 
 ## Contributors
 - Jay Mehta (M25CSE034)
