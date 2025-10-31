@@ -24,18 +24,14 @@ pip install -r requirements.txt
 ```
 
 ## Training the Model
-To train the custom model, run:
-```bash
-python train.py
-```
+To train the custom model, run using Python Build Environment:
+Open cust_model_training.ipynb 
+then Try running cells
+The machine must be installed with Python and Jupyter extensions to run all the cells
+Install if not installed
+Then Wait for all the cells to Complete Running
 
-## Testing the Model
-To evaluate model performance:
-```bash
-python test.py
-```
-
-## Running the Streamlit App
+## Running the Facial Emotion Detection App
 To launch application:
 ```bash
 python emotion_detection_app.py
