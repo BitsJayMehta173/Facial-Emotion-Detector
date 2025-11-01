@@ -1,4 +1,4 @@
-# Emotion Detection from Images
+# Real-Time Analysis of Facial Emotion using Convolutional Neural Network
 
 ## Project Overview
 This project aims to develop a deep learning model for detecting and classifying emotions from facial images. The model is trained on the **FER-2013** dataset and Tested on Python Webcam application.
